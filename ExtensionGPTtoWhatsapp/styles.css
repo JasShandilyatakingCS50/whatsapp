@@ -1,0 +1,14 @@
+.correct-button, .suggest-button {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.correct-button:hover, .suggest-button:hover {
+    background-color: #128C7E;
+}

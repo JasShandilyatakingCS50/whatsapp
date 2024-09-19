@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "WhatsApp ChatGPT Integration",
+    "version": "1.0",
+    "description": "Integrate ChatGPT Pro into WhatsApp Web for text correction and smart response suggestions.",
+    "permissions": ["storage", "activeTab", "scripting"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://web.whatsapp.com/*"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ],
+    "icons": {
+      "48": "icons/correct-icon.png",
+      "128": "icons/suggest-icon.png"
+    }
+  }
+  
